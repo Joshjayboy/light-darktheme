@@ -22,8 +22,9 @@ const MainContent = () => {
             <h2 className="text-2xl font-bold mb-9">Interactive Theme Switcher</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {posts.map((post) => (
-                    <div key={post.id} className="p-4 border rounded-lg shadow-md">
-                        <h3 className="font-bold">{post.title}</h3>
+                    <div key={post.id} className="p-4 border rounded-lg shadow-md bg-secondary">
+                        <h3 className="font-bold mb-5">{post.id}</h3>
+                        <h3 className="font-bold mb-5">{post.title}</h3>
                         <p>{post.body}</p>
                     </div>
                 ))}
